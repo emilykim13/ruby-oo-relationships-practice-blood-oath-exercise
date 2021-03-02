@@ -44,16 +44,21 @@ class Cult
         cult_follower.map {|object| object.follower.age}.sum.to_f/cult_population
     end
 
+    def my_followers_mottos
+        arr = cult_follower.map {|object| object.follower.life_motto}
+        arr.each {|object| object}
+    end 
 
+    def self.least_popular
+        all.min_by {|object| object.cult_follower.count}
+    end
 
+    def self.most_popular
+        all.max_by {|object| object.cult_follower.count}
+    end
 
-
-#   * `Cult#my_followers_mottos`
-#     * prints out all of the mottos for this cult's followers
-#   * `Cult.least_popular`
-#     * returns the `Cult` instance who has the least number of followers :(
-#   * `Cult.most_common_location`
-#     * returns a `String` that is the location with the most cults
-  
+    def self.most_common_location
+        all.find {|object| object == self.most_popular}.location
+    end
 
 end

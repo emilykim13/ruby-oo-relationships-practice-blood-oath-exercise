@@ -23,6 +23,7 @@ b2 = BloodOath.new(1990-03-2, c2, f2)
 b3 = BloodOath.new(2015-03-2, c3, f3)
 b4 = BloodOath.new(2000-03-5, c1, f2)
 b5 = BloodOath.new(2015-03-5, c3, f2)
+b6 = BloodOath.new(2021-03-2, c3, f3)
 
 
 

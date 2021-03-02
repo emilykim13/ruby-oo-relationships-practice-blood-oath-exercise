@@ -5,7 +5,7 @@ class Follower
     def initialize(name, age, life_motto)
         @name = name
         @age = age
-        @life_mottot = life_motto
+        @life_motto = life_motto
         @@all << self
     end
 
@@ -28,4 +28,19 @@ class Follower
     def self.of_a_certain_age(age)
         all.select {|object| object.age >= age}
     end
+
+    def my_cults_slogans
+      # bloodoaths.map{|object| object.cult.slogan}
+      cults.map{|object| object.slogan}
+    end
+
+    def self.most_active
+        all.max_by {|object| object.cults.length}
+    end
+
+    def self.top_ten
+        all.sort_by {|object| object.cults.length}.reverse[0...2]  #... => exclusive    .. => inclusive
+    end
+
 end
+
