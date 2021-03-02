@@ -47,19 +47,19 @@ Questions you should ask yourself:
 
 * Do I need any other attributes?
 * Should I write any other methods?
-* Am I following _Single Source of Truth_?
+* Am I following _Single Source of Truth_? 
 
 **`Cult`**
 
-* `Cult#name`
+<!-- * `Cult#name`
   * returns a `String` that is the cult's name
 * `Cult#location`
   * returns a `String` that is the city where the cult is located
 * `Cult#founding_year`
   * returns an `Integer` that is the year the cult was founded
 * `Cult#slogan`
-  * returns a `String` that is this cult's slogan
-* `Cult#recruit_follower`
+  * returns a `String` that is this cult's slogan -->
+<!-- * `Cult#recruit_follower`
   * takes in an argument of a `Follower` instance and adds them to this cult's list of followers
 * `Cult#cult_population`
   * returns an `Integer` that is the number of followers in this cult
@@ -70,31 +70,31 @@ Questions you should ask yourself:
 * `Cult.find_by_location`
   * takes a `String` argument that is a location and returns an `Array` of cults that are in that location
 * `Cult.find_by_founding_year`
-  * takes an `Integer` argument that is a year and returns all of the cults founded in that year
+  * takes an `Integer` argument that is a year and returns all of the cults founded in that year -->
 
 **`Follower`**
 
-* `Follower#name`
+<!-- * `Follower#name`
   * returns a `String` that is the follower's name
 * `Follower#age`
   * returns an `Integer` that is the age of the follower
 * `Follower#life_motto`
-  * returns a `String` that is the follower's life motto
-* `Follower#cults`
+  * returns a `String` that is the follower's life motto -->
+<!-- * `Follower#cults`
   * returns an `Array` of this follower's cults
 * `Follower#join_cult`
   * takes in an argument of a `Cult` instance and adds this follower to the cult's list of followers
 * `Follower.all`
   * returns an `Array` of all the followers
 * `Follower.of_a_certain_age`
-  * takes an `Integer` argument that is an age and returns an `Array` of followers who are the given age or older
+  * takes an `Integer` argument that is an age and returns an `Array` of followers who are the given age or older -->
 
 **`BloodOath`**
 
-* `BloodOath#initiation_date`
+<!-- * `BloodOath#initiation_date`
   * returns a `String` that is the initiation date of this blood oath in the format _YYYY-MM-DD_.
 * `BloodOath.all`
-  * returns an `Array` of all the blood oaths
+  * returns an `Array` of all the blood oaths -->
 
 ---
 
